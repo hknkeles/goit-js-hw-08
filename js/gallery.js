@@ -120,8 +120,8 @@ function newImageElement(image) {
   const newLi = document.createElement("li");
   newLi.className = "gallery-item";
 
-  newImage.appendChild(newlink);
-  newLi.appendChild(newImage);
+  newlink.appendChild(newImage);
+  newLi.appendChild(newlink)
 
   return newLi;
 }
